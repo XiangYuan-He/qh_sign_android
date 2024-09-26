@@ -24,9 +24,9 @@ data class SignItemData(
     val datetime: String,
     val direction: String,
     val exchange: String,
-    val high: Long,
+    val high: Double,
     val is_subscribe: Boolean,
-    val low: Long,
+    val low: Double,
     val period_label: String,
     val symbol: String,
     val symbol_label: String
