@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingStart="12dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="12dp">
+
+    <TextView
+        android:id="@+id/title_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="品        种"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/value_symbol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/title_symbol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title_symbol"
+        app:layout_constraintTop_toTopOf="@id/title_symbol"
+        tools:text="碳酸锂 li" />
+
+
+    <TextView
+        android:id="@+id/title_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="方        向"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/title_symbol"
+        app:layout_constraintTop_toBottomOf="@id/title_symbol" />
+
+    <TextView
+        android:id="@+id/value_direction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/title_direction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title_direction"
+        app:layout_constraintTop_toTopOf="@id/title_direction"
+        tools:text="多/空" />
+
+
+    <TextView
+        android:id="@+id/title_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="时间周期"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/title_direction"
+        app:layout_constraintTop_toBottomOf="@id/title_direction" />
+
+    <TextView
+        android:id="@+id/value_period"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/title_period"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title_period"
+        app:layout_constraintTop_toTopOf="@id/title_period"
+        tools:text="1H" />
+
+
+    <TextView
+        android:id="@+id/title_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="K 线时间"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/title_period"
+        app:layout_constraintTop_toBottomOf="@id/title_period" />
+
+    <TextView
+        android:id="@+id/value_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/title_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title_time"
+        app:layout_constraintTop_toTopOf="@id/title_time"
+        tools:text="2024/09/25 13:00" />
+
+    <TextView
+        android:id="@+id/title_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="交易区间"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/title_time"
+        app:layout_constraintTop_toBottomOf="@id/title_time" />
+
+    <TextView
+        android:id="@+id/value_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/title_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title_price"
+        app:layout_constraintTop_toTopOf="@id/title_price"
+        tools:text="最高:12000 |低:13000 | 50%: 134444 " />
+
+
+    <TextView
+        android:id="@+id/title_subscribe_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="监听状态"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/title_price"
+        app:layout_constraintTop_toBottomOf="@id/title_price" />
+
+    <TextView
+        android:id="@+id/value_subscribe_stats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/title_subscribe_stats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title_subscribe_stats"
+        app:layout_constraintTop_toTopOf="@id/title_subscribe_stats"
+        tools:text="监听中/未监听" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/value_subscribe_stats" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
