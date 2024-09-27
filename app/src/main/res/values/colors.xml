@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="long_color">#FF0000</color>
     <color name="long_color_90">#1AFF0000</color>
+    <color name="short_color_90">#1A00FF00</color>
     <color name="short_color">#00FF00</color>
 </resources>

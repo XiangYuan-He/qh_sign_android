@@ -25,4 +25,12 @@ interface QHService {
     suspend fun changeSubscribeSymbolsStatus(@Body req: ChangeSubscribeStatsReq): BoolResp?
 
 
+    @GET("qh/get-subscribe-entry")
+    suspend fun getRecentEntrySignSymbols(): ListResp<EntrySignItem>?
+
+
+    @POST("qh/set-subscribe-entry")
+    suspend fun setRecentEntrySignSymbols(@Body req: ChangeEntrySignStatsReq): BoolResp?
+
+
 }
