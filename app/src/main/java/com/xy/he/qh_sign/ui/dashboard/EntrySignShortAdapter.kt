@@ -54,7 +54,7 @@ class EntrySignShortAdapter(
                 binding.valuePeriod.text = this.period
 
                 binding.valueTradeStats.text = if (this.trade_result == "止盈") {
-                    "止盈 盈亏比${this.trade_plr}"
+                    "止盈 盈亏比  ${this.trade_plr}"
                 } else {
                     this.trade_result ?: "未交易"
                 }

@@ -142,13 +142,21 @@ class DashboardFragment : Fragment() {
                     tvPlr.visibility = View.GONE
                     etPlr.visibility = View.GONE
                 }
+                R.id.rb_4 -> {
+                    trade_stats = "保本"
+                    trade_plr = null
+                    tvPlr.visibility = View.GONE
+                    etPlr.visibility = View.GONE
+                }
             }
         }
         if (item.trade_result == "止盈") {
             rgStatus.check(R.id.rb_1)
         } else if (item.trade_result == "止损") {
             rgStatus.check(R.id.rb_2)
-        } else {
+        } else if (item.trade_result == "保本"){
+            rgStatus.check(R.id.rb_4)
+        }else{
             rgStatus.check(R.id.rb_3)
         }
 
